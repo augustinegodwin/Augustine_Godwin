@@ -7,6 +7,7 @@ import {
   FaInstagram,
   FaRss,
   FaLinkedinIn,
+  FaUpwork,
 } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";
 import { metaData, socialLinks } from "app/lib/config";
@@ -26,12 +27,9 @@ function SocialLinks() {
     <div className="flex text-lg gap-3.5 float-right transition-opacity duration-300 hover:opacity-90">
       <SocialLink href={socialLinks.twitter} icon={FaXTwitter} />
       <SocialLink href={socialLinks.github} icon={FaGithub} />
-      <SocialLink href={socialLinks.instagram} icon={FaInstagram} />
       <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} />
+      <SocialLink href={socialLinks.upwork} icon={FaUpwork} />
       <SocialLink href={socialLinks.email} icon={TbMailFilled} />
-      <a href="/rss.xml" target="_self">
-        <FaRss />
-      </a>
     </div>
   );
 }

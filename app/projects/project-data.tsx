@@ -7,21 +7,15 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Tweatflash Social",
-    year: 2022/2024,
-    description: "A social microblogging platform",
-    url: "https://tweatflash.vercel.app",
-  },
-  {
-    title: "Gamestack",
-    year: 2022 /2023,
-    description: "Open source Gaming platform",
-    url: "`https://gamestack-2a001.web.app/",
-  },
-  {
-    title: "Skiilink Ventures Limited",
-    year: 2025,
-    description: "An Ecommerence store",
+    title: "Skiilink Ventures",
+    year: 2024,
+    description: "Ecommerce platform for buying security & solar gadgets",
     url: "https://skiilink-store.vercel.app",
+  },
+  {
+    title: "Quotely",
+    year: 2023,
+    description: "Socal media app for sharing quotes",
+    url: "https://quo-tely.vercel.app",
   },
 ];

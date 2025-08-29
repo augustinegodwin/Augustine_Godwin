@@ -1,5 +1,7 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import Image from "next/image";
+import ImageViewer from "./imageViewer";
 
 interface ImageGridProps {
   images: {
@@ -19,7 +21,8 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
     3: "grid-cols-2 sm:grid-cols-3",
     4: "grid-cols-2 sm:grid-cols-4",
   }[columns];
-
+  const [enlargeImage, setEnlargeImage] = useState(false);  
+  const [currentImageUrl, setCurrentImageUrl] = useState("");   
   return (
     <section>
       <div className={`grid ${gridClass} gap-4 my-8`}>
@@ -48,12 +51,17 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
                 priority
-                className="rounded-lg object-cover"
+                onClick={() => {
+                  setCurrentImageUrl(image.src);
+                  setEnlargeImage(true);
+                }}
+                className="rounded-lg object-cover cursor-pointer"
               />
             )}
           </div>
         ))}
       </div>
+      <ImageViewer enlargeImage={enlargeImage} setEnlargeImage={setEnlargeImage} url={currentImageUrl}/>  
     </section>
   );
 };

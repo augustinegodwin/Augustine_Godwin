@@ -3,46 +3,40 @@ import type { Metadata } from "next";
 import { ImageGrid } from "app/components/image-grid";
 
 export const metadata: Metadata = {
-  title: "Photos",
-  description: "My Photos",
+  title: "Memes 😁",
+  description: "Funny Memes Photos",
 };
 
 export default function Photos() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-medium">Photos</h1>
+      <h1 className="mb-8 text-2xl font-medium">Memes 😁</h1>
       <ImageGrid
         columns={3}
         images={[
           {
-            src: "/photos/photo1.jpg",
-            alt: "Roman columns",
-            href: "https://unsplash.com/photos/people-walking-near-building-during-daytime-dFLBDQQeffU?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash",
+            src: "/memes/memes.jpg",
+            alt: "We are the best browsers",
+          },  
+          {
+            src: "/memes/memes1.jpg",
+            alt: "I just cant",
           },
           {
-            src: "/photos/photo2.jpg",
-            alt: "Big Ben",
-            href: "https://unsplash.com/photos/big-ben-london-MdJq0zFUwrw?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash",
+            src: "/memes/memes2.jpg",
+            alt: "Localhost and cors",
           },
           {
-            src: "/photos/photo3.jpg",
-            alt: "Sacré-Cœur Basilica",
-            href: "https://unsplash.com/photos/a-view-of-the-inside-of-a-building-through-a-circular-window-Tp-3hrx88J4",
+            src: "/memes/memes3.jpg",
+            alt: "Natural bugs",
           },
           {
-            src: "/photos/photo4.jpg",
-            alt: "Eiffel Tower",
-            href: "https://unsplash.com/photos/the-eiffel-tower-towering-over-the-city-of-paris-OgPuPvPsHLM?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash",
+            src: "/memes/memes7.jpeg",
+            alt: "Python with newbie",
           },
           {
-            src: "/photos/photo5.jpg",
-            alt: "Taj Mahal",
-            href: "https://unsplash.com/photos/taj-mahal-india-IPlPkWPJ2fo",
-          },
-          {
-            src: "/photos/photo6.jpg",
-            alt: "Colosseum",
-            href: "https://unsplash.com/photos/brown-concrete-building-under-blue-sky-during-daytime-3cyBR1rIJmA?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash",
+            src: "/memes/memes-6.jpg",
+            alt: "Spiderman is a web designer",
           },
         ]}
       />
@@ -50,24 +44,25 @@ export default function Photos() {
       <ImageGrid
         columns={2}
         images={[
-          { src: "/photos/photo1.jpg", alt: "Roman columns" },
-          { src: "/photos/photo2.jpg", alt: "Big Ben" },
-          { src: "/photos/photo3.jpg", alt: "Sacré-Cœur Basilica" },
-          { src: "/photos/photo4.jpg", alt: "Eiffel Tower" },
+          { src: "/memes/memes13.webp", alt: "C++ in javaScript" },
+          { src: "/memes/memes14.webp", alt: "Frontend,Backend and User" },
+          { src: "/memes/memes11.webp", alt: "Computer science doctor" },
+          { src: "/memes/memes15.webp", alt: "Made in Anger" },
         ]}
       />
 
       <ImageGrid
         columns={4}
         images={[
-          { src: "/photos/photo1.jpg", alt: "Roman columns" },
-          { src: "/photos/photo2.jpg", alt: "Big Ben" },
-          { src: "/photos/photo3.jpg", alt: "Sacré-Cœur Basilica" },
-          { src: "/photos/photo4.jpg", alt: "Eiffel Tower" },
-          { src: "/photos/photo5.jpg", alt: "Taj Mahal" },
-          { src: "/photos/photo6.jpg", alt: "Colosseum" },
+          { src: "/memes/memes16.webp", alt: "What one programmer can do in one month two programmers can in two months" },
+          { src: "/memes/memes17.webp", alt: "If bugs never existed" },
+          { src: "/memes/memes18.jpg", alt: "Saying thank you to chatGPT " },
+          { src: "/memes/memes19.jpg", alt: "Face od disappointment" },
+          { src: "/memes/memes20.jpeg", alt: "AI" },
+          { src: "/memes/memes21.jpg", alt: "The world and electricity" },
         ]}
       />
+      
     </section>
   );
 }
