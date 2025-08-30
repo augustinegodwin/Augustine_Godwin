@@ -1,10 +1,10 @@
 export const metaData = {
-  baseUrl: "https://nextfolio-template.vercel.app/",
+  baseUrl: "https://augustine-godwin.vercel.app/",
   title: "Augustine Godwin",
   name: "Augustine Godwin",
   ogImage: "/opengraph-image.png",
   description:
-    "A clean, fast, and lightweight portfolio template built with Next.js, Vercel, and Tailwind CSS for optimal performance.",
+    "Discover Augustine Godwin's minimalist portfolio — a fast, responsive showcase of creative work built with cutting-edge web technologies like Next.js and Tailwind CSS.",
 };
 
 export const socialLinks = {
